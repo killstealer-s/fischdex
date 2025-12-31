@@ -26,7 +26,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/20 selection:text-white">
       <Navigation />
-
       {/* Hero Section */}
       <div className="relative h-[300px] md:h-[400px] w-full overflow-hidden flex items-center justify-center">
         {/* Abstract Background */}
@@ -44,9 +43,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-2 tracking-tight">
               FISCH<span className="text-primary">DEX</span>
             </h1>
-            <p className="text-muted-foreground text-lg md:text-xl font-light">
-              Live tracking for the rarest naval assets and cosmetic enhancements.
-            </p>
+            <p className="text-muted-foreground text-lg md:text-xl font-light">100% community driven value list</p>
           </motion.div>
 
           {/* Search Bar */}
@@ -69,7 +66,6 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-
       {/* Main Content Area */}
       <main className="flex-grow container max-w-7xl mx-auto px-4 md:px-6 py-8 relative z-20 -mt-20">
         
@@ -119,7 +115,6 @@ export default function Home() {
           </div>
         )}
       </main>
-
       <Footer />
     </div>
   );
