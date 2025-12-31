@@ -13,19 +13,19 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'boat',
       name: 'Curse IV',
-      imageUrl: 'https://images.unsplash.com/photo-1569263979104-865ab7dd8d36?w=500&auto=format&fit=crop&q=60',
+      imageUrl: '/images/curse_iv.png',
       value: '675',
       demand: '8/10',
       status: 'Overpays',
       speed: 265,
       steering: 100,
-      acceleration: 85, // 0.85 -> 85 for integer scale or handle as needed. Schema uses integer. 
+      acceleration: 85, 
     });
     
     await storage.createItem({
       type: 'boat',
       name: 'Nocturne',
-      imageUrl: 'https://images.unsplash.com/photo-1544257750-572358f55058?w=500&auto=format&fit=crop&q=60',
+      imageUrl: '/images/nocturne.png',
       value: '525',
       demand: '9/10',
       status: 'Doing Well',
