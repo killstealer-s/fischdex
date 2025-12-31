@@ -117,6 +117,30 @@ async function seedDatabase() {
       steering: 105,
       acceleration: '0.85',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Cthulu Boat',
+      imageUrl: '/images/cthulu_boat.png',
+      value: '150',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 265,
+      steering: 90,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Royal Yacht',
+      imageUrl: '/images/cthulu_boat.png',
+      value: '150',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 265,
+      steering: 90,
+      acceleration: '0.8',
+    });
     
     await storage.createItem({
       type: 'boat',
