@@ -15,7 +15,7 @@ export const items = pgTable("items", {
   // Boat specifics (nullable for skins)
   speed: integer("speed"),
   steering: integer("steering"),
-  acceleration: integer("acceleration"),
+  acceleration: text("acceleration"),
   
   // Skin specifics (nullable for boats)
   rodName: text("rod_name"),

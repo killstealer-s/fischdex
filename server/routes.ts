@@ -19,7 +19,7 @@ async function seedDatabase() {
       status: 'Overpays',
       speed: 265,
       steering: 100,
-      acceleration: 85, 
+      acceleration: '0.85', 
     });
     
     await storage.createItem({
@@ -31,7 +31,7 @@ async function seedDatabase() {
       status: 'Doing Well',
       speed: 275,
       steering: 105,
-      acceleration: 85,
+      acceleration: '0.85',
     });
     
     await storage.createItem({
@@ -43,7 +43,7 @@ async function seedDatabase() {
       status: 'Doing Well',
       speed: 270,
       steering: 105,
-      acceleration: 90,
+      acceleration: '0.9',
     });
     
     await storage.createItem({
@@ -55,7 +55,7 @@ async function seedDatabase() {
       status: 'Doing Well',
       speed: 270,
       steering: 105,
-      acceleration: 80,
+      acceleration: '0.8',
     });
     
     await storage.createItem({

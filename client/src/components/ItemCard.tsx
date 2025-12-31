@@ -129,9 +129,24 @@ export function ItemCard({ item }: ItemCardProps) {
 }
 
 // Helper for progress bars in stats
-function StatRow({ icon, label, value, max = 100 }: { icon: React.ReactNode, label: string, value: number | null, max?: number }) {
+function StatRow({ icon, label, value, max = 100, displayValue }: { icon: React.ReactNode, label: string, value: number | string | null, max?: number, displayValue?: string }) {
   if (value === null) return null;
-  const percentage = Math.min((value / max) * 100, 100);
+  
+  // Use displayValue if provided, otherwise use value
+  const textValue = displayValue !== undefined ? displayValue : String(value);
+  
+  // For the progress bar, we need a numeric value
+  let numericValue = 0;
+  if (typeof value === 'number') {
+    numericValue = value;
+  } else if (typeof value === 'string') {
+    // Try to extract numeric part for progress bar
+    numericValue = parseFloat(value) || 0;
+    // If it's a decimal like 0.85, scale it for the 100-max bar if it's acceleration
+    if (numericValue < 2 && numericValue > 0) numericValue *= 100;
+  }
+  
+  const percentage = Math.min((numericValue / max) * 100, 100);
   
   return (
     <div className="space-y-1">
@@ -140,7 +155,7 @@ function StatRow({ icon, label, value, max = 100 }: { icon: React.ReactNode, lab
           {icon}
           {label}
         </div>
-        <span>{value}</span>
+        <span>{textValue}</span>
       </div>
       <div className="h-1.5 w-full bg-slate-700/50 rounded-full overflow-hidden">
         <motion.div 
