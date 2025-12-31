@@ -69,6 +69,18 @@ async function seedDatabase() {
       steering: 105,
       acceleration: '0.9',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Demonwake',
+      imageUrl: '/images/demonwake.png',
+      value: '260',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 265,
+      steering: 105,
+      acceleration: '0.9',
+    });
     
     await storage.createItem({
       type: 'boat',
