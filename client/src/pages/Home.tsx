@@ -81,14 +81,14 @@ export default function Home() {
               onClick={() => setActiveTab("boat")} 
               icon={<Ship className="w-4 h-4" />}
             >
-              Vessels
+              Boats
             </Tab>
             <Tab 
               active={activeTab === "skin"} 
               onClick={() => setActiveTab("skin")} 
               icon={<PaintBucket className="w-4 h-4" />}
             >
-              Cosmetics
+              Skins
             </Tab>
           </div>
         </div>
