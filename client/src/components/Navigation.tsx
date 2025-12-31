@@ -24,7 +24,7 @@ export function Navigation() {
               <Rocket className="w-5 h-5 text-background fill-background transform -rotate-45" />
             </div>
             <span className="font-display font-bold text-xl tracking-wide bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
-              AQUA<span className="text-primary">TRADE</span>
+              FISCH<span className="text-primary">DEX</span>
             </span>
           </Link>
 
