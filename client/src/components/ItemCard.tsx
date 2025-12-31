@@ -1,0 +1,132 @@
+import { motion, AnimatePresence } from "framer-motion";
+import { type Item } from "@shared/schema";
+import { Zap, Anchor, Gauge, Move, ChevronsUp, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+interface ItemCardProps {
+  item: Item;
+}
+
+export function ItemCard({ item }: ItemCardProps) {
+  const isBoat = item.type === "boat";
+
+  // Status icon logic
+  const StatusIcon = {
+    "Rising": TrendingUp,
+    "Dropping": TrendingDown,
+    "Stable": Minus
+  }[item.status] || Minus;
+
+  const statusColor = {
+    "Rising": "text-green-400",
+    "Dropping": "text-red-400",
+    "Stable": "text-gray-400"
+  }[item.status] || "text-gray-400";
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -5 }}
+      className="group relative bg-card border border-border rounded-xl overflow-hidden shadow-lg hover:shadow-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col h-full glow-card"
+    >
+      {/* Image Container */}
+      <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-900 to-slate-800 overflow-hidden p-6 flex items-center justify-center">
+        {/* Type Badge */}
+        <div className={cn(
+          "absolute top-3 left-3 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider z-10 border border-white/10 backdrop-blur-sm",
+          isBoat ? "bg-blue-500/20 text-blue-300" : "bg-purple-500/20 text-purple-300"
+        )}>
+          {item.type}
+        </div>
+
+        {/* Floating Image */}
+        <motion.img 
+          src={item.imageUrl} 
+          alt={item.name}
+          className="w-full h-full object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] z-0"
+          whileHover={{ scale: 1.1, rotate: isBoat ? -2 : 2 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        />
+
+        {/* Hover Overlay - Stats Reveal */}
+        <div className="absolute inset-0 bg-black/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+          <div className="w-full space-y-4">
+            {isBoat ? (
+              // Boat Stats
+              <>
+                <StatRow icon={<Gauge className="w-4 h-4 text-cyan-400" />} label="Speed" value={item.speed} max={100} />
+                <StatRow icon={<Move className="w-4 h-4 text-emerald-400" />} label="Steering" value={item.steering} max={100} />
+                <StatRow icon={<ChevronsUp className="w-4 h-4 text-yellow-400" />} label="Accel" value={item.acceleration} max={100} />
+              </>
+            ) : (
+              // Skin Stats
+              <div className="text-center">
+                <p className="text-muted-foreground text-sm uppercase font-bold tracking-wider mb-2">Equipable On</p>
+                <div className="flex items-center justify-center gap-2 text-purple-300 text-lg font-display">
+                  <Anchor className="w-5 h-5" />
+                  {item.rodName || "Universal"}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Card Body */}
+      <div className="p-4 flex flex-col flex-grow bg-card relative z-10">
+        <h3 className="text-xl font-bold text-white mb-1 truncate">{item.name}</h3>
+        
+        <div className="grid grid-cols-3 gap-2 mt-auto pt-4 border-t border-white/5">
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase text-muted-foreground font-bold tracking-wider">Value</span>
+            <span className="text-primary font-mono font-bold text-lg">{item.value}</span>
+          </div>
+          
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase text-muted-foreground font-bold tracking-wider">Demand</span>
+            <span className={cn("font-bold text-sm mt-1", 
+              item.demand === "High" ? "text-orange-400" : 
+              item.demand === "Low" ? "text-slate-400" : "text-yellow-400"
+            )}>
+              {item.demand}
+            </span>
+          </div>
+
+          <div className="flex flex-col items-end">
+            <span className="text-[10px] uppercase text-muted-foreground font-bold tracking-wider">Status</span>
+            <div className="flex items-center gap-1 mt-1">
+              <StatusIcon className={cn("w-4 h-4", statusColor)} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+// Helper for progress bars in stats
+function StatRow({ icon, label, value, max = 100 }: { icon: React.ReactNode, label: string, value: number | null, max?: number }) {
+  if (value === null) return null;
+  const percentage = Math.min((value / max) * 100, 100);
+  
+  return (
+    <div className="space-y-1">
+      <div className="flex items-center justify-between text-xs text-slate-300 uppercase font-bold tracking-wide">
+        <div className="flex items-center gap-2">
+          {icon}
+          {label}
+        </div>
+        <span>{value}</span>
+      </div>
+      <div className="h-1.5 w-full bg-slate-700/50 rounded-full overflow-hidden">
+        <motion.div 
+          initial={{ width: 0 }}
+          whileInView={{ width: `${percentage}%` }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="h-full bg-gradient-to-r from-primary to-cyan-300 rounded-full"
+        />
+      </div>
+    </div>
+  );
+}
