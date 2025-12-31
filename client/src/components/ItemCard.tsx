@@ -75,7 +75,7 @@ export function ItemCard({ item }: ItemCardProps) {
 
       {/* Card Body */}
       <div className="p-4 flex flex-col flex-grow bg-card relative z-10">
-        <h3 className="text-xl font-bold text-white mb-1 truncate">{item.name}</h3>
+        <h3 className="text-xl font-bold text-white mb-1 truncate drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]">{item.name}</h3>
         
         <div className="grid grid-cols-3 gap-2 mt-auto pt-4 border-t border-white/5">
           <div className="flex flex-col">
