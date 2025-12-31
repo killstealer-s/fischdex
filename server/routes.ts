@@ -12,26 +12,26 @@ async function seedDatabase() {
     // Boats
     await storage.createItem({
       type: 'boat',
-      name: 'Azure Speedster',
+      name: 'Curse IV',
       imageUrl: 'https://images.unsplash.com/photo-1569263979104-865ab7dd8d36?w=500&auto=format&fit=crop&q=60',
-      value: '2.5M',
-      demand: 'High',
-      status: 'Rising',
-      speed: 85,
-      steering: 70,
-      acceleration: 90,
+      value: '675',
+      demand: '8/10',
+      status: 'Overpays',
+      speed: 265,
+      steering: 100,
+      acceleration: 85, // 0.85 -> 85 for integer scale or handle as needed. Schema uses integer. 
     });
     
     await storage.createItem({
       type: 'boat',
-      name: 'Ironclad Hauler',
+      name: 'Nocturne',
       imageUrl: 'https://images.unsplash.com/photo-1544257750-572358f55058?w=500&auto=format&fit=crop&q=60',
-      value: '500k',
-      demand: 'Low',
-      status: 'Stable',
-      speed: 40,
-      steering: 30,
-      acceleration: 20,
+      value: '525',
+      demand: '9/10',
+      status: 'Doing Well',
+      speed: 275,
+      steering: 105,
+      acceleration: 85,
     });
     
     await storage.createItem({
@@ -39,7 +39,7 @@ async function seedDatabase() {
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
-      demand: 'Medium',
+      demand: '5/10',
       status: 'Stable',
       speed: 60,
       steering: 50,
@@ -52,7 +52,7 @@ async function seedDatabase() {
       name: 'Abyssal Void',
       imageUrl: 'https://images.unsplash.com/photo-1618331835717-801e976710b2?w=500&auto=format&fit=crop&q=60',
       value: '5M',
-      demand: 'Very High',
+      demand: '10/10',
       status: 'Rising',
       rodName: 'Abyssal Rod',
     });
@@ -62,7 +62,7 @@ async function seedDatabase() {
       name: 'Magma Flow',
       imageUrl: 'https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=500&auto=format&fit=crop&q=60',
       value: '1.2M',
-      demand: 'Medium',
+      demand: '6/10',
       status: 'Dropping',
       rodName: 'Magma Rod',
     });
@@ -72,7 +72,7 @@ async function seedDatabase() {
       name: 'Glacial Frost',
       imageUrl: 'https://images.unsplash.com/photo-1483664852095-d6cc6870705d?w=500&auto=format&fit=crop&q=60',
       value: '3M',
-      demand: 'High',
+      demand: '7/10',
       status: 'Stable',
       rodName: 'Ice Rod',
     });

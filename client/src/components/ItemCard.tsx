@@ -12,12 +12,16 @@ export function ItemCard({ item }: ItemCardProps) {
 
   // Status icon logic
   const StatusIcon = {
+    "Overpays": TrendingUp,
+    "Doing Well": TrendingUp,
     "Rising": TrendingUp,
     "Dropping": TrendingDown,
     "Stable": Minus
   }[item.status] || Minus;
 
   const statusColor = {
+    "Overpays": "text-yellow-400",
+    "Doing Well": "text-emerald-400",
     "Rising": "text-green-400",
     "Dropping": "text-red-400",
     "Stable": "text-gray-400"
