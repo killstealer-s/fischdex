@@ -10,7 +10,7 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <Rocket className="w-6 h-6 text-primary" />
               <span className="font-display font-bold text-xl text-white">
-                AQUA<span className="text-primary">TRADE</span>
+                AQUA<span className="text-primary">DEX</span>
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm">
