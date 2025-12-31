@@ -42,7 +42,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-2 tracking-tight">
-              MARKET<span className="text-primary">WATCH</span>
+              FISCH<span className="text-primary">DEX</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl font-light">
               Live tracking for the rarest naval assets and cosmetic enhancements.
