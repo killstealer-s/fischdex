@@ -81,6 +81,18 @@ async function seedDatabase() {
       steering: 105,
       acceleration: '0.9',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Kraken of the Void',
+      imageUrl: '/images/kraken_of_the_void.png',
+      value: '240',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 260,
+      steering: 105,
+      acceleration: '0.9',
+    });
     
     await storage.createItem({
       type: 'boat',
