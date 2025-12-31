@@ -105,6 +105,18 @@ async function seedDatabase() {
       steering: 100,
       acceleration: '0.8',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Violet Viper',
+      imageUrl: '/images/violet_viper.png',
+      value: '150',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 280,
+      steering: 105,
+      acceleration: '0.85',
+    });
     
     await storage.createItem({
       type: 'boat',
