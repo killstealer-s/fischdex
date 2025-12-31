@@ -57,6 +57,18 @@ async function seedDatabase() {
       steering: 105,
       acceleration: '0.8',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Pastel Impulse',
+      imageUrl: '/images/pastel_impulse.png',
+      value: '300',
+      demand: '8/10',
+      status: 'Doing Well',
+      speed: 275,
+      steering: 105,
+      acceleration: '0.9',
+    });
     
     await storage.createItem({
       type: 'boat',
