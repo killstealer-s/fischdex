@@ -48,6 +48,18 @@ async function seedDatabase() {
     
     await storage.createItem({
       type: 'boat',
+      name: 'Black Comet',
+      imageUrl: '/images/black_comet.png',
+      value: '350',
+      demand: '8/10',
+      status: 'Doing Well',
+      speed: 270,
+      steering: 105,
+      acceleration: 80,
+    });
+    
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
