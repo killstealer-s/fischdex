@@ -10,7 +10,7 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <Rocket className="w-6 h-6 text-primary" />
               <span className="font-display font-bold text-xl text-white">
-                AQUA<span className="text-primary">DEX</span>
+                FISCH<span className="text-primary">DEX</span>
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm">
@@ -40,7 +40,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 AquaTrade. All rights reserved. Not affiliated with any game developers.
+            © 2024 FischDex. All rights reserved. Not affiliated with any game developers.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="p-2 rounded-full bg-white/5 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors">
