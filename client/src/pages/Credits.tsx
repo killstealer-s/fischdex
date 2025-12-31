@@ -24,7 +24,7 @@ export default function Credits() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-tight">
-            SITE <span className="text-primary">CREDITS</span>
+            SITE <span className="text-primary">MEMBERS</span>
           </h1>
           <p className="text-muted-foreground text-lg">
             FISCHDEX was brought to life by these dedicated creators.

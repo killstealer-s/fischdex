@@ -10,7 +10,7 @@ export function Navigation() {
   const links = [
     { href: "/", label: "Marketplace" },
     { href: "/inventory", label: "My Hangar" }, // Placeholder for future feature
-    { href: "/credits", label: "Credits" }, // Placeholder
+    { href: "/credits", label: "Members" }, // Placeholder
   ];
 
   return (
