@@ -15,7 +15,6 @@ export default function Credits() {
   return (
     <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/20 selection:text-white">
       <Navigation />
-      
       <main className="flex-grow container max-w-2xl mx-auto px-4 md:px-6 py-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,9 +25,7 @@ export default function Credits() {
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-tight">
             SITE <span className="text-primary">MEMBERS</span>
           </h1>
-          <p className="text-muted-foreground text-lg">
-            FISCHDEX was brought to life by these dedicated creators.
-          </p>
+          <p className="text-muted-foreground text-lg">For any information or suggestions, contact the following on the Fischdex Discord Server. Be nice.</p>
         </motion.div>
 
         <div className="space-y-4">
@@ -66,7 +63,6 @@ export default function Credits() {
           ))}
         </div>
       </main>
-
       <Footer />
     </div>
   );
