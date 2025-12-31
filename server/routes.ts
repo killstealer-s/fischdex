@@ -93,6 +93,18 @@ async function seedDatabase() {
       steering: 105,
       acceleration: '0.9',
     });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Elysian Jolt',
+      imageUrl: '/images/elysian_jolt.png',
+      value: '230',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 260,
+      steering: 100,
+      acceleration: '0.8',
+    });
     
     await storage.createItem({
       type: 'boat',
