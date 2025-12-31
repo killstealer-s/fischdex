@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { type Item } from "@shared/schema";
-import { Zap, Anchor, Gauge, Move, ChevronsUp, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import { Zap, Anchor, Gauge, Move, ChevronsUp, TrendingUp, TrendingDown, Minus, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 interface ItemCardProps {
   item: Item;
@@ -9,6 +10,12 @@ interface ItemCardProps {
 
 export function ItemCard({ item }: ItemCardProps) {
   const isBoat = item.type === "boat";
+
+  const handleInfoClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const formattedName = item.name.replace(/\s+/g, "_");
+    window.open(`https://fischipedia.org/wiki/${formattedName}`, "_blank");
+  };
 
   // Status icon logic
   const StatusIcon = {
@@ -58,11 +65,23 @@ export function ItemCard({ item }: ItemCardProps) {
           <div className="w-full space-y-4">
             {isBoat ? (
               // Boat Stats
-              <>
-                <StatRow icon={<Gauge className="w-4 h-4 text-cyan-400" />} label="Speed" value={item.speed} max={100} />
-                <StatRow icon={<Move className="w-4 h-4 text-emerald-400" />} label="Steering" value={item.steering} max={100} />
-                <StatRow icon={<ChevronsUp className="w-4 h-4 text-yellow-400" />} label="Accel" value={item.acceleration} max={100} />
-              </>
+              <div className="w-full space-y-4">
+                <div className="space-y-3">
+                  <StatRow icon={<Gauge className="w-4 h-4 text-cyan-400" />} label="Speed" value={item.speed} max={100} />
+                  <StatRow icon={<Move className="w-4 h-4 text-emerald-400" />} label="Steering" value={item.steering} max={100} />
+                  <StatRow icon={<ChevronsUp className="w-4 h-4 text-yellow-400" />} label="Accel" value={item.acceleration} max={100} />
+                </div>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full mt-4 bg-primary/10 border-primary/30 hover:bg-primary/20 text-white font-bold transition-all group/btn"
+                  onClick={handleInfoClick}
+                >
+                  Additional Information
+                  <ExternalLink className="w-3 h-3 ml-2 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                </Button>
+              </div>
             ) : (
               // Skin Stats
               <div className="text-center">
