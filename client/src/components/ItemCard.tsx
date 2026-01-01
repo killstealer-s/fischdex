@@ -42,7 +42,7 @@ export function ItemCard({ item }: ItemCardProps) {
       className="group relative bg-card border border-border rounded-xl overflow-hidden shadow-lg hover:shadow-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col h-full glow-card"
     >
       {/* C/C Badge */}
-      {item.isCC && (
+      {!!item.isCC && (
         <div className="absolute top-3 right-3 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest z-20 bg-red-600 text-white border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)]">
           C/C
         </div>

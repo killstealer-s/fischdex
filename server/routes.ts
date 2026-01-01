@@ -696,7 +696,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: "Aurelia's Grace",
-      imageUrl: '/images/aurelias_grace.png',
+      imageUrl: '/images/the_reaper.png',
       value: '150',
       demand: '6/10',
       status: 'Stable',
@@ -706,7 +706,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Scarwing',
-      imageUrl: '/images/scarwing.png',
+      imageUrl: '/images/aurelias_grace.png',
       value: '150',
       demand: '8/10',
       status: 'Stable',
@@ -716,7 +716,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Monsleeper',
-      imageUrl: '/images/monsleeper.png',
+      imageUrl: '/images/scarwing.png',
       value: '100',
       demand: '7/10',
       status: 'Unstable',
@@ -726,7 +726,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Heavyblade of Glory',
-      imageUrl: '/images/heavyblade_of_glory.png',
+      imageUrl: '/images/monsleeper.png',
       value: '100',
       demand: '8/10',
       status: 'Stable',
@@ -736,7 +736,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Roslit Leviathan',
-      imageUrl: '/images/roslit_leviathan.png',
+      imageUrl: '/images/heavyblade_of_glory.png',
       value: '100',
       demand: '3/10',
       status: 'Stable',
@@ -746,7 +746,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Crypted Ivory',
-      imageUrl: '/images/crypted_ivory.png',
+      imageUrl: '/images/roslit_leviathan.png',
       value: '75',
       demand: '7/10',
       status: 'Stable',
@@ -756,7 +756,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Inkling Overseer',
-      imageUrl: '/images/inkling_overseer.png',
+      imageUrl: '/images/crypted_ivory.png',
       value: '70',
       demand: '2/10',
       status: 'Stable',
@@ -766,7 +766,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Meowtastic Tower',
-      imageUrl: '/images/meowtastic_tower.png',
+      imageUrl: '/images/inkling_overseer.png',
       value: '70',
       demand: '7.5/10',
       status: 'Stable',
@@ -776,7 +776,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Silkbane',
-      imageUrl: '/images/silkbane.png',
+      imageUrl: '/images/meowtastic_tower.png',
       value: '70',
       demand: '8/10',
       status: 'Doing Well',
@@ -787,7 +787,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Wings of Ruin',
-      imageUrl: '/images/wings_of_ruin.png',
+      imageUrl: '/images/silkbane.png',
       value: '70',
       demand: '6/10',
       status: 'Stable',
@@ -798,7 +798,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Umbral Vengeance',
-      imageUrl: '/images/umbral_vengeance.png',
+      imageUrl: '/images/wings_of_ruin.png',
       value: '65',
       demand: '6/10',
       status: 'Stable',
@@ -808,7 +808,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: "Sanzu's Embrace",
-      imageUrl: '/images/sanzus_embrace.png',
+      imageUrl: '/images/umbral_vengeance.png',
       value: '60',
       demand: '6/10',
       status: 'Stable',
@@ -818,7 +818,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Celestial Prismheart',
-      imageUrl: '/images/celestial_prismheart.png',
+      imageUrl: '/images/sanzus_embrace.png',
       value: '60',
       demand: '6/10',
       status: 'Stable',
@@ -828,7 +828,7 @@ async function seedDatabase() {
     await storage.createItem({
       type: 'skin',
       name: 'Soulful Omen',
-      imageUrl: '/images/soulful_omen.png',
+      imageUrl: '/images/celestial_prismheart.png',
       value: '55',
       demand: '6/10',
       status: 'Stable',
