@@ -156,6 +156,18 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Curse III',
+      imageUrl: '/images/curse_iii.png',
+      value: '140',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 255,
+      steering: 90,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
