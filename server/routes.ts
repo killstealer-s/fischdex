@@ -180,6 +180,18 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Dreadcurrent',
+      imageUrl: '/images/dreadcurrent.png',
+      value: '100',
+      demand: '4/10',
+      status: 'Stable',
+      speed: 300,
+      steering: 30,
+      acceleration: '0.2',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
