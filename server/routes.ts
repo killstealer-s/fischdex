@@ -216,6 +216,18 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Riptide',
+      imageUrl: '/images/riptide.png',
+      value: '85',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 287,
+      steering: 110,
+      acceleration: '1.33',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Inky Pal',
       imageUrl: '/images/inky_pal.png',
       value: '85',
