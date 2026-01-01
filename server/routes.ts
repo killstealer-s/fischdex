@@ -232,10 +232,250 @@ async function seedDatabase() {
       imageUrl: '/images/pantheress.png',
       value: '80',
       demand: '7/10',
+      status: 'Doing Well',
+      speed: 285,
+      steering: 100,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Corruptor',
+      imageUrl: '/images/corruptor.png',
+      value: '65',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 299,
+      steering: 130,
+      acceleration: '1.2',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Skygold Sprinter',
+      imageUrl: '/images/skygold_sprinter.png',
+      value: '65',
+      demand: '4/10',
+      status: 'Stable',
+      speed: 240,
+      steering: 80,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Krampus Curse',
+      imageUrl: '/images/krampus_curse.png',
+      value: '60',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 295,
+      steering: 120,
+      acceleration: '1.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Purrari',
+      imageUrl: '/images/purrari.png',
+      value: '55',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 250,
+      steering: 150,
+      acceleration: '1',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Orange Unicycle',
+      imageUrl: '/images/orange_unicycle.png',
+      value: '50',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 180,
+      steering: 70,
+      acceleration: '0.3',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Cobalt Corsair',
+      imageUrl: '/images/cobalt_corsair.png',
+      value: '50',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 245,
+      steering: 70,
+      acceleration: '0.7',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Dreadmarrow',
+      imageUrl: '/images/dreadmarrow.png',
+      value: '50',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 200,
+      steering: 105,
+      acceleration: '0.85',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Volcanic Speedboat',
+      imageUrl: '/images/volcanic_speedboat.png',
+      value: '50',
+      demand: '2/10',
+      status: 'Stable',
+      speed: 210,
+      steering: 35,
+      acceleration: '0.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Gleeb 9000',
+      imageUrl: '/images/gleeb_9000.png',
+      value: '45',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 297,
+      steering: 90,
+      acceleration: '1.3',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Ivorous',
+      imageUrl: '/images/ivorous.png',
+      value: '40',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 293,
+      steering: 120,
+      acceleration: '1.11',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Mecha Ray',
+      imageUrl: '/images/mecha_ray.png',
+      value: '40',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 288,
+      steering: 100,
+      acceleration: '0.78',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Novaris',
+      imageUrl: '/images/novaris.png',
+      value: '40',
+      demand: '5/10',
       status: 'Stable',
       speed: 285,
       steering: 100,
       acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Love Crasher',
+      imageUrl: '/images/love_crasher.png',
+      value: '40',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 190,
+      steering: 35,
+      acceleration: '0.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Nemesis',
+      imageUrl: '/images/nemesis.png',
+      value: '35',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 285,
+      steering: 101,
+      acceleration: '1.23',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Toro Veloce',
+      imageUrl: '/images/toro_veloce.png',
+      value: '35',
+      demand: '4/10',
+      status: 'Stable',
+      speed: 240,
+      steering: 80,
+      acceleration: '0.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Scorpferno',
+      imageUrl: '/images/scorpferno.png',
+      value: '35',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 295,
+      steering: 111,
+      acceleration: '1.35',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Celestial Cruiser',
+      imageUrl: '/images/celestial_cruiser.png',
+      value: '35',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 230,
+      steering: 80,
+      acceleration: '0.4',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Gravedigger',
+      imageUrl: '/images/gravedigger.png',
+      value: '35',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 287,
+      steering: 120,
+      acceleration: '0.9',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Hollywave Cruiser',
+      imageUrl: '/images/hollywave_cruiser.png',
+      value: '30',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 230,
+      steering: 30,
+      acceleration: '0.2',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Popsicle Jetski',
+      imageUrl: '/images/popsicle_jetski.png',
+      value: '30',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 250,
+      steering: 95,
+      acceleration: '0.7',
     });
 
     await storage.createItem({
