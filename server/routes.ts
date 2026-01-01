@@ -648,7 +648,7 @@ async function seedDatabase() {
       name: 'Cyanic Demonride',
       imageUrl: '/images/cyanic_demonride.png',
       value: '450',
-      demand: '8/10',
+      demand: '7/10',
       status: 'Stable',
       rodName: 'Trident Rod',
     });
