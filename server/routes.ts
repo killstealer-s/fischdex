@@ -1044,158 +1044,168 @@ async function seedDatabase() {
       name: 'Meteor Blade',
       imageUrl: '/images/meteor_blade.png',
       value: '25',
-      demand: '5/10',
-      status: 'Stable',
-      rodName: 'Onirifalx',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Coral Carving',
-      imageUrl: '/images/coral_carving.png',
-      value: '25',
-      demand: '4/10',
-      status: 'Stable',
-      rodName: 'Coral Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Abyssal Sovereign',
-      imageUrl: '/images/abyssal_sovereign.png',
-      value: '25',
-      demand: '6/10',
-      status: 'Stable',
-      rodName: 'Abyssal Rod',
-      isCC: 1,
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Tidepiercer',
-      imageUrl: '/images/tidepiercer.png',
-      value: '20',
-      demand: '5/10',
-      status: 'Stable',
-      rodName: 'Trident Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Petalstrike',
-      imageUrl: '/images/petalstrike.png',
-      value: '20',
-      demand: '4/10',
-      status: 'Stable',
-      rodName: 'Seraphic Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Celestial Cadence',
-      imageUrl: '/images/celestial_cadence.png',
-      value: '20',
-      demand: '5/10',
-      status: 'Stable',
-      rodName: 'Seraphic Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Witchy Ember',
-      imageUrl: '/images/witchy_ember.png',
-      value: '20',
-      demand: '6/10',
-      status: 'Stable',
-      rodName: 'Magma Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Divine Ascension',
-      imageUrl: '/images/divine_ascension.png',
-      value: '20',
       demand: '7/10',
-      status: 'Doing Well',
-      rodName: "Heaven's Rod",
-      isCC: 1,
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Flame Shears',
-      imageUrl: '/images/flame_shears.png',
-      value: '15',
-      demand: '4/10',
       status: 'Stable',
-      rodName: 'Verdant Shear Rod',
+      rodName: 'Ethereal Prism Rod',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Spinal Spectrum',
-      imageUrl: '/images/spinal_spectrum.png',
-      value: '15',
-      demand: '5/10',
-      status: 'Stable',
-      rodName: 'Seraphic Rod',
-    });
-
-    await storage.createItem({
-      type: 'skin',
-      name: 'Midnight Edge',
-      imageUrl: '/images/midnight_edge.png',
-      value: '15',
+      name: 'Love Spectre',
+      imageUrl: '/images/love_spectre.png',
+      value: '20',
       demand: '3/10',
       status: 'Stable',
-      rodName: 'Onirifalx',
+      rodName: 'Abyssal Spectre Rod',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Sunbaked Scale',
-      imageUrl: '/images/sunbaked_scale.png',
-      value: '10',
-      demand: '2/10',
+      name: 'Frostmourner',
+      imageUrl: '/images/frostmourner.png',
+      value: '20',
+      demand: '3/10',
       status: 'Stable',
-      rodName: 'Sunken Rod',
+      rodName: 'No-life Rod',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Deepsea Drifter',
-      imageUrl: '/images/deepsea_drifter.png',
-      value: '10',
+      name: 'Icedagger',
+      imageUrl: '/images/icedagger.png',
+      value: '20',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Ruinous Oath',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Sweet Scratches',
+      imageUrl: '/images/sweet_scratches.png',
+      value: '20',
+      demand: '7/10',
+      status: 'Stable',
+      rodName: 'Tryhard Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Stellarweaver',
+      imageUrl: '/images/stellarweaver.png',
+      value: '20',
+      demand: '3/10',
+      status: 'Stable',
+      rodName: 'No-life Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Grandmaster Key',
+      imageUrl: '/images/grandmaster_key.png',
+      value: '20',
       demand: '4/10',
       status: 'Stable',
-      rodName: 'Carbon Fiber Rod',
+      rodName: 'Great Rod of Oscar',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Emerald Echo',
-      imageUrl: '/images/emerald_echo.png',
-      value: '10',
+      name: 'Peppermint Purrs',
+      imageUrl: '/images/peppermint_purrs.png',
+      value: '20',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Destiny Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Frostfang',
+      imageUrl: '/images/frostfang.png',
+      value: '20',
+      demand: '3/10',
+      status: 'Stable',
+      rodName: 'Rod of the Forgotten Fang',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Tanuki Trinket',
+      imageUrl: '/images/tanuki_trinket.png',
+      value: '20',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Destiny Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Slimebound',
+      imageUrl: '/images/slimebound.png',
+      value: '18',
+      demand: '3/10',
+      status: 'Stable',
+      rodName: 'No-life Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Blightwing',
+      imageUrl: '/images/blightwing.png',
+      value: '18',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: "Heaven's Rod",
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Pineslicer',
+      imageUrl: '/images/pineslicer.png',
+      value: '18',
       demand: '5/10',
       status: 'Stable',
-      rodName: 'Seraphic Rod',
+      rodName: 'Ruinous Oath',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Ruby Rush',
-      imageUrl: '/images/ruby_rush.png',
-      value: '10',
+      name: 'Forgotten Doodle',
+      imageUrl: '/images/forgotten_doodle.png',
+      value: '18',
       demand: '4/10',
       status: 'Stable',
-      rodName: 'Trident Rod',
+      rodName: 'Rod of the Forgotten Fang',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Vampiric Fang',
+      imageUrl: '/images/vampiric_fang.png',
+      value: '18',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Cerulean Fang',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Sinister Gates',
+      imageUrl: '/images/sinister_gates.png',
+      value: '18',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Evil Pitchfork',
     });
 
     await storage.createItem({
       type: 'skin',
       name: 'Banana Rod',
       imageUrl: '/images/banana_rod_skin.png',
-      value: '5',
+      value: '15',
       demand: '1/10',
       status: 'Stable',
       rodName: 'Basic Rod',
