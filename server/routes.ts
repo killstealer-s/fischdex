@@ -192,6 +192,18 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Frostbite',
+      imageUrl: '/images/frostbite.png',
+      value: '95',
+      demand: '8/10',
+      status: 'Stable',
+      speed: 299,
+      steering: 100,
+      acceleration: '1.5',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
