@@ -492,6 +492,138 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Fishscale Waverider',
+      imageUrl: '/images/fishscale_waverider.png',
+      value: '30',
+      demand: '4/10',
+      status: 'Stable',
+      speed: 230,
+      steering: 80,
+      acceleration: '0.4',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Mawrider',
+      imageUrl: '/images/mawrider.png',
+      value: '30',
+      demand: '4/10',
+      status: 'Dropping',
+      speed: 235,
+      steering: 80,
+      acceleration: '0.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Gondola',
+      imageUrl: '/images/gondola.png',
+      value: '30',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 230,
+      steering: 60,
+      acceleration: '0.4',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Macabre Mistress',
+      imageUrl: '/images/macabre_mistress.png',
+      value: '30',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 285,
+      steering: 150,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Candy Crawlie',
+      imageUrl: '/images/candy_crawlie.png',
+      value: '25',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 250,
+      steering: 200,
+      acceleration: '1.55',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Mega Seal',
+      imageUrl: '/images/mega_seal.png',
+      value: '25',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 244,
+      steering: 77,
+      acceleration: '1.12',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Sharkie Floatie',
+      imageUrl: '/images/sharkie_floatie.png',
+      value: '25',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 245,
+      steering: 150,
+      acceleration: '1.2',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: "Widow's Veil",
+      imageUrl: '/images/widows_veil.png',
+      value: '25',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 290,
+      steering: 120,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Bunny Jetski',
+      imageUrl: '/images/bunny_jetski.png',
+      value: '25',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 245,
+      steering: 80,
+      acceleration: '0.9',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Banana Cruiser',
+      imageUrl: '/images/banana_cruiser.png',
+      value: '20',
+      demand: '5/10',
+      status: 'Stable',
+      speed: 240,
+      steering: 110,
+      acceleration: '1.1',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Atlantean Jetski',
+      imageUrl: '/images/atlantean_jetski.png',
+      value: '20',
+      demand: '3/10',
+      status: 'Stable',
+      speed: 210,
+      steering: 80,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
