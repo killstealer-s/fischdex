@@ -44,8 +44,6 @@ export function Navigation() {
             ))}
           </div>
 
-          
-
           {/* Mobile Menu Toggle */}
           <button 
             className="md:hidden p-2 text-white/80 hover:text-white"

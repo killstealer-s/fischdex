@@ -132,6 +132,18 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Meowmobile',
+      imageUrl: '/images/meowmobile.png',
+      value: '140',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 245,
+      steering: 150,
+      acceleration: '1.5',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: '/images/cthulu_boat.png',
       value: '150',
@@ -151,7 +163,19 @@ async function seedDatabase() {
       status: 'Stable',
       speed: 60,
       steering: 50,
-      acceleration: 50,
+      acceleration: "50",
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Meowmobile',
+      imageUrl: '/images/meowmobile.png',
+      value: '140',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 245,
+      steering: 150,
+      acceleration: '1.5',
     });
 
     // Skins
