@@ -834,6 +834,60 @@ async function seedDatabase() {
       status: 'Stable',
       rodName: 'Seraphic Rod',
     });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Cyber Shooter',
+      imageUrl: '/images/cyber_shooter.png',
+      value: '50',
+      demand: '7/10',
+      status: 'Stable',
+      rodName: 'Cyber Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Petalstrike',
+      imageUrl: '/images/petalstrike.png',
+      value: '45',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Floral Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Halberd of Reverence',
+      imageUrl: '/images/halberd_of_reverence.png',
+      value: '40',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Revered Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Shiny Nessie',
+      imageUrl: '/images/shiny_nessie.png',
+      value: '35',
+      demand: '8/10',
+      status: 'Doing Well',
+      rodName: 'Mythical Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Runeflare',
+      imageUrl: '/images/runeflare.png',
+      value: '25',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Rune Rod',
+    });
     
     console.log("Database seeded successfully.");
   }

@@ -23,7 +23,8 @@ export function ItemCard({ item }: ItemCardProps) {
     "Doing Well": TrendingUp,
     "Rising": TrendingUp,
     "Dropping": TrendingDown,
-    "Stable": Minus
+    "Stable": Minus,
+    "Unstable": null
   }[item.status] || Minus;
 
   const statusColor = {
@@ -31,7 +32,8 @@ export function ItemCard({ item }: ItemCardProps) {
     "Doing Well": "text-emerald-400",
     "Rising": "text-green-400",
     "Dropping": "text-red-400",
-    "Stable": "text-gray-400"
+    "Stable": "text-gray-400",
+    "Unstable": "text-orange-400"
   }[item.status] || "text-gray-400";
 
   return (
@@ -138,7 +140,11 @@ export function ItemCard({ item }: ItemCardProps) {
           <div className="flex flex-col items-end">
             <span className="text-[10px] uppercase text-muted-foreground font-bold tracking-wider">Status</span>
             <div className="flex items-center gap-1 mt-1">
-              <StatusIcon className={cn("w-4 h-4", statusColor)} />
+              {StatusIcon ? (
+                <StatusIcon className={cn("w-4 h-4", statusColor)} />
+              ) : (
+                <span className={cn("text-xs font-bold", statusColor)}>{item.status}</span>
+              )}
             </div>
           </div>
         </div>
