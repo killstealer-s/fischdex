@@ -1038,7 +1038,169 @@ async function seedDatabase() {
       status: 'Stable',
       rodName: 'Ruinous Oath',
     });
-    
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Meteor Blade',
+      imageUrl: '/images/meteor_blade.png',
+      value: '25',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Onirifalx',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Coral Carving',
+      imageUrl: '/images/coral_carving.png',
+      value: '25',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: 'Coral Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Abyssal Sovereign',
+      imageUrl: '/images/abyssal_sovereign.png',
+      value: '25',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Abyssal Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Tidepiercer',
+      imageUrl: '/images/tidepiercer.png',
+      value: '20',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Trident Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Petalstrike',
+      imageUrl: '/images/petalstrike.png',
+      value: '20',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Celestial Cadence',
+      imageUrl: '/images/celestial_cadence.png',
+      value: '20',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Witchy Ember',
+      imageUrl: '/images/witchy_ember.png',
+      value: '20',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Magma Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Divine Ascension',
+      imageUrl: '/images/divine_ascension.png',
+      value: '20',
+      demand: '7/10',
+      status: 'Doing Well',
+      rodName: "Heaven's Rod",
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Flame Shears',
+      imageUrl: '/images/flame_shears.png',
+      value: '15',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: 'Verdant Shear Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Spinal Spectrum',
+      imageUrl: '/images/spinal_spectrum.png',
+      value: '15',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Midnight Edge',
+      imageUrl: '/images/midnight_edge.png',
+      value: '15',
+      demand: '3/10',
+      status: 'Stable',
+      rodName: 'Onirifalx',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Sunbaked Scale',
+      imageUrl: '/images/sunbaked_scale.png',
+      value: '10',
+      demand: '2/10',
+      status: 'Stable',
+      rodName: 'Sunken Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Deepsea Drifter',
+      imageUrl: '/images/deepsea_drifter.png',
+      value: '10',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: 'Carbon Fiber Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Emerald Echo',
+      imageUrl: '/images/emerald_echo.png',
+      value: '10',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Ruby Rush',
+      imageUrl: '/images/ruby_rush.png',
+      value: '10',
+      demand: '4/10',
+      status: 'Stable',
+      rodName: 'Trident Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Banana Rod',
+      imageUrl: '/images/banana_rod_skin.png',
+      value: '5',
+      demand: '1/10',
+      status: 'Stable',
+      rodName: 'Basic Rod',
+    });
+
     console.log("Database seeded successfully.");
   }
 }
