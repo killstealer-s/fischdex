@@ -41,6 +41,13 @@ export function ItemCard({ item }: ItemCardProps) {
       whileHover={{ y: -5 }}
       className="group relative bg-card border border-border rounded-xl overflow-hidden shadow-lg hover:shadow-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col h-full glow-card"
     >
+      {/* C/C Badge */}
+      {item.isCC && (
+        <div className="absolute top-3 right-3 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest z-20 bg-red-600 text-white border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)]">
+          C/C
+        </div>
+      )}
+
       {/* Image Container */}
       <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-900 to-slate-800 overflow-hidden p-6 flex items-center justify-center">
         {/* Type Badge */}
@@ -84,12 +91,24 @@ export function ItemCard({ item }: ItemCardProps) {
               </div>
             ) : (
               // Skin Stats
-              <div className="text-center">
-                <p className="text-muted-foreground text-sm uppercase font-bold tracking-wider mb-2">Equipable On</p>
-                <div className="flex items-center justify-center gap-2 text-purple-300 text-lg font-display">
-                  <Anchor className="w-5 h-5" />
-                  {item.rodName || "Universal"}
+              <div className="w-full space-y-4">
+                <div className="text-center">
+                  <p className="text-muted-foreground text-sm uppercase font-bold tracking-wider mb-2">Equipable On</p>
+                  <div className="flex items-center justify-center gap-2 text-purple-300 text-lg font-display">
+                    <Anchor className="w-5 h-5" />
+                    {item.rodName || "Universal"}
+                  </div>
                 </div>
+
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full mt-4 bg-primary/10 border-primary/30 hover:bg-primary/20 text-white font-bold transition-all group/btn"
+                  onClick={handleInfoClick}
+                >
+                  Additional Information
+                  <ExternalLink className="w-3 h-3 ml-2 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                </Button>
               </div>
             )}
           </div>

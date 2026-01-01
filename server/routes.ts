@@ -622,47 +622,217 @@ async function seedDatabase() {
       acceleration: '0.8',
     });
 
-    await storage.createItem({
-      type: 'boat',
-      name: 'Royal Yacht',
-      imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
-      value: '10M',
-      demand: '5/10',
-      status: 'Stable',
-      speed: 60,
-      steering: 50,
-      acceleration: "50",
-    });
-
     // Skins
     await storage.createItem({
       type: 'skin',
-      name: 'Abyssal Void',
-      imageUrl: 'https://images.unsplash.com/photo-1618331835717-801e976710b2?w=500&auto=format&fit=crop&q=60',
-      value: '5M',
-      demand: '10/10',
-      status: 'Rising',
-      rodName: 'Abyssal Rod',
-    });
-    
-    await storage.createItem({
-      type: 'skin',
-      name: 'Magma Flow',
-      imageUrl: 'https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=500&auto=format&fit=crop&q=60',
-      value: '1.2M',
-      demand: '6/10',
-      status: 'Dropping',
-      rodName: 'Magma Rod',
+      name: "Cthulu's Revenge",
+      imageUrl: '/images/cthulus_revenge.png',
+      value: '1200',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Great Dreamer Rod',
     });
 
     await storage.createItem({
       type: 'skin',
-      name: 'Glacial Frost',
-      imageUrl: 'https://images.unsplash.com/photo-1483664852095-d6cc6870705d?w=500&auto=format&fit=crop&q=60',
-      value: '3M',
+      name: 'Puff of Heaven',
+      imageUrl: '/images/puff_of_heaven.png',
+      value: '900',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: "Heaven's Rod",
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Cyanic Demonride',
+      imageUrl: '/images/cyanic_demonride.png',
+      value: '450',
+      demand: '8/10',
+      status: 'Stable',
+      rodName: 'Trident Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Fuchsia Fidelity',
+      imageUrl: '/images/fuchsia_fidelity.png',
+      value: '230',
       demand: '7/10',
       status: 'Stable',
-      rodName: 'Ice Rod',
+      rodName: 'Trident Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Dreamline',
+      imageUrl: '/images/dreamline.png',
+      value: '210',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Seraphic Rainbow',
+      imageUrl: '/images/seraphic_rainbow.png',
+      value: '190',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'The Reaper',
+      imageUrl: '/images/the_reaper.png',
+      value: '150',
+      demand: '8/10',
+      status: 'Stable',
+      rodName: 'Onirifalx',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: "Aurelia's Grace",
+      imageUrl: '/images/aurelias_grace.png',
+      value: '150',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Scarwing',
+      imageUrl: '/images/scarwing.png',
+      value: '150',
+      demand: '8/10',
+      status: 'Stable',
+      rodName: 'Duskwire',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Monsleeper',
+      imageUrl: '/images/monsleeper.png',
+      value: '100',
+      demand: '7/10',
+      status: 'Unstable',
+      rodName: 'Great Dreamer Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Heavyblade of Glory',
+      imageUrl: '/images/heavyblade_of_glory.png',
+      value: '100',
+      demand: '8/10',
+      status: 'Stable',
+      rodName: 'Tryhard Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Roslit Leviathan',
+      imageUrl: '/images/roslit_leviathan.png',
+      value: '100',
+      demand: '3/10',
+      status: 'Stable',
+      rodName: "Leviathan's Fang Rod",
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Crypted Ivory',
+      imageUrl: '/images/crypted_ivory.png',
+      value: '75',
+      demand: '7/10',
+      status: 'Stable',
+      rodName: 'Elder Mossripper Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Inkling Overseer',
+      imageUrl: '/images/inkling_overseer.png',
+      value: '70',
+      demand: '2/10',
+      status: 'Stable',
+      rodName: 'Verdant Shear Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Meowtastic Tower',
+      imageUrl: '/images/meowtastic_tower.png',
+      value: '70',
+      demand: '7.5/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Silkbane',
+      imageUrl: '/images/silkbane.png',
+      value: '70',
+      demand: '8/10',
+      status: 'Doing Well',
+      rodName: 'Great Dreamer Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Wings of Ruin',
+      imageUrl: '/images/wings_of_ruin.png',
+      value: '70',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+      isCC: 1,
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Umbral Vengeance',
+      imageUrl: '/images/umbral_vengeance.png',
+      value: '65',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Dreambreaker',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: "Sanzu's Embrace",
+      imageUrl: '/images/sanzus_embrace.png',
+      value: '60',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Onirifalx',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Celestial Prismheart',
+      imageUrl: '/images/celestial_prismheart.png',
+      value: '60',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Soulful Omen',
+      imageUrl: '/images/soulful_omen.png',
+      value: '55',
+      demand: '6/10',
+      status: 'Stable',
+      rodName: 'Seraphic Rod',
     });
     
     console.log("Database seeded successfully.");

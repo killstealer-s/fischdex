@@ -19,6 +19,7 @@ export const items = pgTable("items", {
   
   // Skin specifics (nullable for boats)
   rodName: text("rod_name"),
+  isCC: integer("is_cc").default(0), // 0 for false, 1 for true
 });
 
 // === BASE SCHEMAS ===
