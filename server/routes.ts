@@ -204,6 +204,42 @@ async function seedDatabase() {
 
     await storage.createItem({
       type: 'boat',
+      name: 'Sushi Rider',
+      imageUrl: '/images/sushi_rider.png',
+      value: '90',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 230,
+      steering: 150,
+      acceleration: '1.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Inky Pal',
+      imageUrl: '/images/inky_pal.png',
+      value: '85',
+      demand: '6/10',
+      status: 'Stable',
+      speed: 200,
+      steering: 30,
+      acceleration: '0.6',
+    });
+
+    await storage.createItem({
+      type: 'boat',
+      name: 'Pantheress',
+      imageUrl: '/images/pantheress.png',
+      value: '80',
+      demand: '7/10',
+      status: 'Stable',
+      speed: 285,
+      steering: 100,
+      acceleration: '0.8',
+    });
+
+    await storage.createItem({
+      type: 'boat',
       name: 'Royal Yacht',
       imageUrl: 'https://images.unsplash.com/photo-1605281317010-fe5ffe79b9b7?w=500&auto=format&fit=crop&q=60',
       value: '10M',
