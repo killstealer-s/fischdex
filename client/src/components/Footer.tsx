@@ -22,7 +22,17 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-white">Community</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">Discord Server</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                <a 
+                  href="https://discord.gg/VgB5b2s3U4" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full"
+                  data-testid="link-community-discord"
+                >
+                  Discord Server
+                </a>
+              </li>
               <li className="hover:text-primary transition-colors cursor-pointer">Trading Guide</li>
               <li className="hover:text-primary transition-colors cursor-pointer">Market Analysis</li>
             </ul>
