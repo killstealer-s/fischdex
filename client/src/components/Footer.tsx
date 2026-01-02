@@ -33,7 +33,7 @@ export function Footer() {
                   Discord Server
                 </a>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Trading Guide</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Value Spreadsheet (For lower tiers, coming soon)</li>
             </ul>
           </div>
 
