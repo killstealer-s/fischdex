@@ -41,12 +41,19 @@ export function ItemCard({ item }: ItemCardProps) {
       whileHover={{ y: -5 }}
       className="group relative bg-card border border-border rounded-xl overflow-hidden shadow-lg hover:shadow-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col h-full glow-card"
     >
-      {/* C/C Badge */}
-      {!!item.isCC && (
-        <div className="absolute top-3 right-3 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest z-20 bg-red-600 text-white border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)]">
-          C/C
-        </div>
-      )}
+      {/* Badges */}
+      <div className="absolute top-3 right-3 flex flex-col gap-2 z-20">
+        {!!item.isCC && (
+          <div className="px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest bg-red-600 text-white border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)]">
+            C/C
+          </div>
+        )}
+        {!!item.isUnstable && (
+          <div className="px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest bg-orange-900 text-white border border-orange-800 shadow-[0_0_10px_rgba(124,45,18,0.5)]">
+            Unstable
+          </div>
+        )}
+      </div>
 
       {/* Image Container */}
       <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-900 to-slate-800 overflow-hidden p-6 flex items-center justify-center">

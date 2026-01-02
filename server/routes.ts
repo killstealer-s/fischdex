@@ -80,6 +80,7 @@ async function seedDatabase() {
       speed: 265,
       steering: 105,
       acceleration: '0.9',
+      isUnstable: 1,
     });
 
     await storage.createItem({
@@ -92,6 +93,7 @@ async function seedDatabase() {
       speed: 260,
       steering: 105,
       acceleration: '0.9',
+      isUnstable: 1,
     });
 
     await storage.createItem({
@@ -158,7 +160,7 @@ async function seedDatabase() {
       type: 'boat',
       name: 'Curse III',
       imageUrl: '/images/curse_iii.png',
-      value: '140',
+      value: '145',
       demand: '6/10',
       status: 'Stable',
       speed: 255,
@@ -255,7 +257,7 @@ async function seedDatabase() {
       name: 'Corruptor',
       imageUrl: '/images/corruptor.png',
       value: '65',
-      demand: '7/10',
+      demand: '5/10',
       status: 'Stable',
       speed: 299,
       steering: 130,
@@ -512,6 +514,7 @@ async function seedDatabase() {
       speed: 235,
       steering: 80,
       acceleration: '0.6',
+      isUnstable: 1,
     });
 
     await storage.createItem({
@@ -721,6 +724,7 @@ async function seedDatabase() {
       demand: '7/10',
       status: 'Unstable',
       rodName: 'Great Dreamer Rod',
+      isCC: 1,
     });
 
     await storage.createItem({
@@ -1027,6 +1031,17 @@ async function seedDatabase() {
       demand: '4/10',
       status: 'Stable',
       rodName: 'Trident Rod',
+    });
+
+    await storage.createItem({
+      type: 'skin',
+      name: 'Halberd of Reverence',
+      imageUrl: '/images/halberd_of_reverence.png',
+      value: '150',
+      demand: '5/10',
+      status: 'Stable',
+      rodName: 'Universal',
+      isUnstable: 1,
     });
 
     await storage.createItem({
