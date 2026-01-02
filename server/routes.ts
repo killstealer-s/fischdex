@@ -1216,16 +1216,6 @@ async function seedDatabase() {
       rodName: 'Evil Pitchfork',
     });
 
-    await storage.createItem({
-      type: 'skin',
-      name: 'Banana Rod',
-      imageUrl: '/images/banana_rod_skin.png',
-      value: '15',
-      demand: '1/10',
-      status: 'Stable',
-      rodName: 'Basic Rod',
-    });
-
     console.log("Database seeded successfully.");
   }
 }
