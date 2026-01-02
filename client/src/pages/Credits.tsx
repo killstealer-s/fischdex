@@ -8,6 +8,26 @@ const teamMembers = [
   {
     roblox: "killstealer_s",
     discord: "killstealer_s",
+  },
+  {
+    roblox: "therealwilson1777",
+    discord: "whatawaytowork",
+  },
+  {
+    roblox: "hunter_xxxxl",
+    discord: "lolman6547",
+  },
+  {
+    roblox: "telovbn",
+    discord: "im_mathew1",
+  },
+  {
+    roblox: "zem_pt",
+    discord: "zem_pt",
+  },
+  {
+    roblox: "-",
+    discord: "plsnocturnepls",
   }
 ];
 
