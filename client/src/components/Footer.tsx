@@ -38,15 +38,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="text-white">Legal</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">Terms of Service</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Privacy Policy</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Cookie Settings</li>
-            </ul>
           </div>
-        </div>
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
