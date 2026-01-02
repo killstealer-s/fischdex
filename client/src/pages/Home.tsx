@@ -43,7 +43,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-2 tracking-tight">
               FISCH<span className="text-primary">DEX</span>
             </h1>
-            <p className="text-muted-foreground text-lg md:text-xl font-light">100% community driven value list</p>
+            <p className="text-muted-foreground text-lg md:text-xl font-light">First Release. Please report bugs or mistaken values in the discord servers. There may be errors, if found, please ping @killstealer_s or members of the team.</p>
           </motion.div>
 
           {/* Search Bar */}
