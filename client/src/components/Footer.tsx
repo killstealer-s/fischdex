@@ -13,10 +13,7 @@ export function Footer() {
                 FISCH<span className="text-primary">DEX</span>
               </span>
             </div>
-            <p className="text-muted-foreground max-w-sm">
-              The premier marketplace for luxury virtual vessels and rare cosmetic skins. 
-              Track values, analyze demand, and build your dream fleet.
-            </p>
+            <p className="text-muted-foreground max-w-sm">The website is in Beta. Please bear with us if there are problems, and report them in the discord server. The list does not contain all values, but I wanted to release it as soon as possible so I pushed it out asap, and will continue on values. The link to this website may change in a month, please check the discord server for updates.</p>
           </div>
 
           <div className="space-y-4">
